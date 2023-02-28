@@ -13,9 +13,7 @@
 h1{
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
-    font-size: 3em;
     color: #004446;
-    margin-bottom: 0.5em;
 }
 
 h2{
@@ -23,7 +21,6 @@ h2{
     text-align: center;
     border-top: 0.15em solid #FDDA02;
     border-bottom: 0.15em solid #FDDA02;
-    margin: 1em 5em 2em 5em;
     padding: 0.4em 0 0.4em 0;
 }
 
@@ -39,7 +36,6 @@ header{
     background-color: #ECF6F0;
     font-family: 'Quicksand', sans-serif;
     color: #004446;
-    padding: 2em;
 }
 
 .novisible {
@@ -49,6 +45,10 @@ header{
 header{
     display: flex;
     justify-content: space-between;
+    padding: 1em;
+    z-index: 8000;
+    position: sticky;
+    top: 0;
 }
 
 #nombre{
@@ -57,7 +57,7 @@ header{
 }
 
 #nombre p{
-    padding-left: 1em;
+    padding-left: 0.5em;
 }
 /* Boton de menu - rectangulo */
 #llamarmenu{
@@ -71,7 +71,7 @@ header{
    transition: all 0.3s ease-out;
    position: fixed;
    border-radius: 20%;
-   z-index: 9000;
+   z-index: 8000;
 }
 
 /* lineas del boton menu - rectangulo */
@@ -165,7 +165,7 @@ header{
 
 .fondoverde div{
     font-family: 'Sintony', sans-serif;
-    
+
     margin-bottom: 3em;
 }
 
