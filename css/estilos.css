@@ -1,0 +1,217 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Quicksand:wght@400;700&family=Sintony:wght@400;700&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+
+h1{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    color: #004446;
+    margin-bottom: 0.5em;
+}
+
+h2{
+    font-family: 'Sintony', sans-serif;
+    text-align: center;
+    border-top: 0.15em solid #FDDA02;
+    border-bottom: 0.15em solid #FDDA02;
+    margin: 1em 5em 2em 5em;
+    padding: 0.4em 0 0.4em 0;
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+header{
+    background-color: #ECF6F0;
+    font-family: 'Quicksand', sans-serif;
+    color: #004446;
+    padding: 2em;
+}
+
+.novisible {
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#nombre{
+    display: flex; 
+    justify-content:flex-start;
+}
+
+#nombre p{
+    padding-left: 1em;
+}
+/* Boton de menu - rectangulo */
+#llamarmenu{
+    background-color: #FDDA02;
+   padding: 0.5em;
+   width: 2.8em;
+   height: 2.2em;
+   top: 1.9em;
+   right: 2em;
+   cursor: pointer;
+   transition: all 0.3s ease-out;
+   position: fixed;
+   border-radius: 20%;
+   z-index: 9000;
+}
+
+/* lineas del boton menu - rectangulo */
+.hamburguesa{
+    color: #004446;
+    transition: all 0.3s ease-out;
+    z-index: 9090;
+    top: 1.15em;
+    right: 1.38em;
+    width: 1em;
+    position: fixed;
+}
+
+.cruz{
+    color: #FDDA02;
+    transition: all 0.3s ease-out;
+    z-index: 9090;
+    top: 1.15em;
+    right: 1.38em;
+    width: 1em;
+    position: fixed;
+}
+
+.menu{
+    text-align: center;
+    background-color: #004446;
+    width: 93%;
+    top: 1.17em;
+    right: 1.38em;
+    border-radius: 2%;
+    position: fixed;
+    color: #ECF6F0;
+}
+
+.boton_prendido{
+    font-weight: 700;
+    color: #FDDA02;
+    border-bottom: 0.2em solid #FDDA02;
+    border-top: 0.2em solid #FDDA02;
+    padding: 0.4em 0 0.4em 0em;
+}
+
+.menu li{
+    margin: 2em 13em 2em 13em;
+}
+
+/*------------------------------------------------- 
+------------- empieza el body principal---------- 
+--------------------------------------------------*/
+
+#principal{
+    margin: 2em;
+}
+
+.fotoperfil{
+    text-align: center;
+}
+
+.fotoperfil img{
+    width: 60%;
+    height: auto;
+}
+
+#principal p{
+    color: #004446;
+    margin-bottom: 2em;
+}
+
+.linea{
+    border: 0.15em solid #FDDA02;
+    margin: 1em 8em 1em 8em;
+}
+
+.iconosredes{
+    display: flex;
+    justify-content: space-around;
+}
+.iconosredes li img{
+    width: 4.5em;
+}
+
+/*------------------------------------------------
+--------------section puesto actual---------------
+------------------------------------------------*/
+
+.fondoverde{
+    background-color: #004446;
+    padding: 2em;
+    color: #ECF6F0;
+}
+
+.fondoverde div{
+    font-family: 'Sintony', sans-serif;
+    
+    margin-bottom: 3em;
+}
+
+.listapuestoactual li{
+    margin-left: 1em;
+    margin-top: 0.8em;
+    margin-bottom: 0.5em;
+    padding-left: 0.6em;
+    border-left: 0.2em solid #FDDA02;
+}
+
+
+
+/*-------------------------------------------------
+----------------Inicio version tablet 600px ------------------- 
+-------------------------------------------------*/
+@media screen and (min-width: 600px){
+
+}
+
+/*-------------------------------------------------
+----------------Inicio version laptop y desktops 992px ------------------- 
+-------------------------------------------------*/
+@media screen and (min-width: 992px){
+
+    #principal{
+        display: flex;
+    }
+    .menu{
+        display: flex;
+    }
+    
+    .menu li{
+        margin-left: 2.5em;
+    }
+    
+    .boton_prendido{
+        padding-left: 0.5em;
+    }
+    
+}
+
+/*-------------------------------------------------
+----------------Inicio version desktop 1200px ------------------- 
+-------------------------------------------------*/
+@media screen and (min-width: 1200px) {
+
+
+}
