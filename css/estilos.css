@@ -244,7 +244,6 @@ header{
 .iconotrabajo{
     background-color: #ffffff;
     padding-top: 1em;
-    padding-left: 1em;
     padding-bottom: 0.5em;
     border-radius: 20px 20px 0 0;
     display: flex;
@@ -261,6 +260,7 @@ header{
 }
 
 .a img{
+    width: auto;
     height: 60px;
 }
 
@@ -270,9 +270,8 @@ header{
     margin-right: 0.4em;
 }
 #instagramunico{
-    height: auto;
-    width: 50%;
-    padding-bottom: 0.5em;
+    height: 60px;
+    width: auto;
 }
 .linktrabajo{
     font-family: 'Quicksand', sans-serif;
@@ -515,6 +514,75 @@ Inicio version tablet 600px
 -------------------------------------------------------- 
 -------------------------------------------------*/
 @media screen and (min-width: 600px){
+
+    #principal p{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .iconosredes li img{
+        width: 4em;
+    }
+
+    .fondoverde div{
+        width: 90%;
+    }
+    .puestoactualflex{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .fondoclaro > div{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .botontrabajo{
+        margin-bottom: 1.5em;
+        width: 45%;
+    }
+    .datotrabajo{
+        padding-bottom: 1em;
+        height: 80%;
+    }
+
+    .lineaporcentaje{
+        flex-basis: 100%;
+    }
+
+    .album{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    .galeria{
+        width: 100%;
+        height: 100%;
+    }
+    .galeria figcaption{
+        width: 100%;
+    }
+    .galeria figcaption{
+        padding: 1em;
+    }
+
+    .videoyoutube{
+        display: block;
+        width: auto;
+    }
+
+    #solo{
+        display: block;
+        background-color: #ffffff;
+    }
+
+    #flexinstagram{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
 }
 
