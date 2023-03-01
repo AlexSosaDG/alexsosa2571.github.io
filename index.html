@@ -92,8 +92,8 @@
             <article class="botontrabajo">
                 <a href="https://www.instagram.com/alex.ipsum/" target="_blank" title="instagram diseño">
                     <div class="iconotrabajo">
-                        <div>
-                            <img class="logopropio" src="imagenes/iconoalexsosa.png" alt="instagram diseño">
+                        <div class="a">
+                            <img src="imagenes/iconoalexsosa.png" alt="instagram diseño">
                         </div>
                         <div class="itemdostrabajo">
                             <img class="logoinstagram" src="imagenes/iconoinstagram.png" alt="logo instagram">
@@ -112,8 +112,8 @@
             <article class="botontrabajo">
                 <a href="https://www.instagram.com/xilo.nowen/" target="_blank" title="instagram @xilo.nowen">
                     <div class="iconotrabajo">
-                        <div>
-                            <img class="logopropio" src="imagenes/logo xilonowen experiencia.png"
+                        <div class="a">
+                            <img src="imagenes/logo xilonowen experiencia.png"
                                 alt="marca Xilo Nowen">
                         </div>
                         <div class="itemdostrabajo">
@@ -160,7 +160,7 @@
                     <p>60%</p>
                 </li>
                 <li class="porcentajeline">
-                    <h6>Desarrollo FRONTEND</h6> <!-- barra de porcentaje-->
+                    <h6>FRONTEND</h6> <!-- barra de porcentaje-->
                     <div class="lineaporcentaje">
                         <div class="contenedorporcentaje" style="width:40%">40%</div>
                     </div>
@@ -323,40 +323,42 @@
                     <figcaption>Diseño de cartel publicitario plegable</figcaption>
                 </figure>
             </article>
-            <div>
+            <article class="audiovisual">
                 <div>
                     <h4>Adaptación de un fragmento de la pelicula "Una vida iluminada"</h4>
+                    <iframe class="videoyoutube" src="https://www.youtube.com/embed/bzvHXR2CiqQ"
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                     <p>Basado en el concepto de - docente con un secreto peligroso - realizamos esta adaptación para un
                         proyecto dentro de la materia Medios Expresivos 2, en la carrera de Diseño gráfico.</p>
                     <p>Grupo de trabajo:</p>
-                    <ul>
+                    <ul class="integrantes">
                         <li>Alex Sosa</li>
                         <li>Ronny Espinoza</li>
                         <li>Sol Hesieh</li>
                     </ul>
-                    <iframe class="videoyoutube" src="https://www.youtube.com/embed/bzvHXR2CiqQ"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
                 </div>
                 <div>
                     <h4>La Evolución del Microfono</h4>
+                    <iframe class="videoyoutube" src="https://drive.google.com/file/d/12gtgRumIL2OVn0rnNh1V_TiyBmsadgfx/preview" allow="autoplay"></iframe>
                     <p>Animación 2D realizada para la materia Medios Expresivos 2 en la carrera de Diseño Gráfico. Un
                         cortometraje que muestra la evolución del microfono mostrando su protagonismo en diferentes
                         momentos de la historia.</p>
                     <p>Grupo de trabajo:</p>
-                    <ul>
+                    <ul class="integrantes">
                         <li>Antonella Herrera</li>
                         <li>Marcos Thomas López</li>
                         <li>Alex Sosa</li>
                     </ul>
-                    <iframe class="videoyoutube" src="https://drive.google.com/file/d/12gtgRumIL2OVn0rnNh1V_TiyBmsadgfx/preview" allow="autoplay"></iframe>
+                    <div class="botonsalvar">
                     <p>Si el video no se reproduce, podes ingresar acá para verlo</p>
                     <a href="https://drive.google.com/file/d/12gtgRumIL2OVn0rnNh1V_TiyBmsadgfx/view?usp=sharing"
                         target="_blank" title="link al video">Evolución del Microfono</a>
+                    </div>
                 </div>
-            </div>
-            <div>
+            </article>
+            <div id="solo">
                 <h4>Un poco de mi emprendimiento</h4>
                 <ul>
                     <li>
@@ -653,7 +655,7 @@
         <section id="contacto">
             <h2>CONTACTO</h2>
             <h4>Podes contactarme a través de tu red social favorita</h4>
-            <ul>
+            <ul class="iconosredes">
                 <li><a href="mailto:alexsosa2571@gmail.com" target="_blank" title="enviar email">
                         <img src="imagenes/iconogmail.png" alt="enviar mail"></a>
                 </li>
@@ -669,28 +671,28 @@
                             src="imagenes/logo xilonowen.png" alt="marca Xilo Nowen"></a>
                 </li>
                 <li><a aria-label="Chat on WhatsApp" href="https://wa.me/1121796628" target="_blank"> <img
-                            alt="Chat on WhatsApp" src="imagenes/boton wssp.png" /></a>
+                            alt="Chat on WhatsApp" src="imagenes/iconowssp.png" /></a>
                 </li>
             </ul>
-            <div>
-                <h4>También podes ver mi CV en pdf</h4>
-                <a href="pdf/Alex Sosa - CV.pdf" download="alex-sosa-CV - PDF">Descargar</a>
+            <div class="botonsalvar">
+                <p>También podes ver mi CV en pdf</p>
+                <a href="pdf/Alex Sosa - CV.pdf" download="alex-sosa-CV - PDF">CV Alex Sosa</a>
             </div>
         </section>
     </main>
     <footer>
         <div>
-            <h5>Alex Sosa /</h5>
+            <h4>Alex Sosa /</h4>
             <h5>Estudiante de Diseño Gráfico</h5>
         </div>
-        <ul>
+        <ul id="menufooter">
             <li>INICIO</li>
             <li>EXPERIENCIA</li>
             <li>HABILIDADES</li>
             <li>PORTAFOLIO</li>
             <li>CONTACTO</li>
         </ul>
-        <ul>
+        <ul id="listacontacto">
             <li><a href="mailto:alexsosa2571@gmail.com" target="_blank" title="enviar email">Gmail</a>
             </li>
             <li><a href="https://www.linkedin.com/in/alex-sosa-nowen/" target="_blank"

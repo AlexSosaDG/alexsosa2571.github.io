@@ -24,7 +24,7 @@ h2{
     border-bottom: 0.15em solid #FDDA02;
     padding: 0.4em 0 0.4em 0;
     width: 55%;
-    margin: 0 auto;
+    margin: auto;
 }
 
 a{
@@ -42,13 +42,6 @@ header{
     background-color: rgba(236, 246, 240, 0.9);
     font-family: 'Quicksand', sans-serif;
     color: #004446;
-}
-
-.novisible {
-    display: none;
-}
-
-header{
     display: flex;
     justify-content: space-between;
     padding: 1em;
@@ -56,6 +49,12 @@ header{
     position: sticky;
     top: 0;
 }
+
+.novisible {
+    display: none;
+}
+
+   
 
 #nombre{
     display: flex; 
@@ -157,6 +156,12 @@ header{
     display: flex;
     justify-content: space-around;
 }
+.iconosredes li{
+    background-color: #ffffff;
+    border-radius: 20%;
+    padding: 0.5em;
+}
+
 .iconosredes li img{
     width: 4.5em;
 }
@@ -179,11 +184,12 @@ header{
 }
 
 .fondoverde h4{
-    font-size: 1.5em;
+    font-size: large;
 }
 
 .listapuestoactual li{
-    margin-left: 1em;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0.8em;
     margin-bottom: 0.5em;
     padding-left: 0.5em;
@@ -195,6 +201,7 @@ header{
     background-color: #ECF6F0;
     padding: 1em;
     border-radius: 20px;
+    width: 100%;
 }
 
 /*-------------------------------------------------
@@ -219,17 +226,11 @@ header{
     text-align: center;
 }
 
-.datotrabajo{
-    background-color: #004446;
-    height: 13.5em;
-    padding: 1.5em 1.2em 1.5em 1em;
-    color: #ECF6F0;
-}
-
 .datotrabajo h6{
     color: #FDDA02;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
+    font-size: medium;
 }
 
 .datotrabajo h4{
@@ -242,41 +243,47 @@ header{
 
 .iconotrabajo{
     background-color: #ffffff;
-    height: 9em;
+    padding-top: 1em;
     padding-left: 1em;
     padding-bottom: 0.5em;
     border-radius: 20px 20px 0 0;
     display: flex;
     align-items: flex-end;
-
+    justify-content: center;
+}
+.a{
+    flex-basis: 30%;
+}
+.datotrabajo{
+    background-color: #004446;
+    padding: 1.5em 1.2em 1.5em 1em;
+    color: #ECF6F0;
 }
 
-.logopropio{
-    width: 100px;
-    height: auto;
-    margin-right: 2em;
+.a img{
+    height: 60px;
 }
 
 .logoinstagram{
-    width: 40px;
+    width: 30px;
     height: auto;
     margin-right: 0.4em;
 }
 #instagramunico{
-    height: 100px;
-    width: auto;
+    height: auto;
+    width: 50%;
     padding-bottom: 0.5em;
 }
 .linktrabajo{
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
     color: #004446;
-    font-size: 2em;
 }
 
 .itemdostrabajo{
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
 }
 
 .botontrabajo{
@@ -295,6 +302,9 @@ header{
     padding: 2em;
 }
 
+.habilidades h2{
+    color: #ECF6F0;
+}
 .habilidades h5{
     font-family: 'Sintony', sans-serif;
     font-size: x-large;
@@ -329,15 +339,17 @@ header{
 }
 .lineaporcentaje{
     border: 0.15em solid #ECF6F0;
-    flex-basis: 55%;
+    flex-basis: 60%;
 }
 .contenedorporcentaje{
     background-color: #FDDA02;
     color: #FDDA02;
+    height: 100%;
 }
 .porcentajeline p{
     font-family: 'Sintony', sans-serif;
     font-weight: 400;
+    margin-left: 3%;
     color: #ECF6F0;
 }
 
@@ -351,7 +363,7 @@ header{
 
 .galeria{
     background-color: #ffffff;
-    width: 400px;
+    width: 100%;
     border-radius: 1%;
     margin-left: auto;
     margin-right: auto;
@@ -360,26 +372,140 @@ header{
 
 .galeria img{
     border-radius: 1% 1% 0 0;
-    width: 400px;
+    width: 100%;
     height: auto;
 }
-.galeria figcaption{
+.galeria figcaption, .audiovisual p{
     font-family: 'Sintony', sans-serif;
     font-weight: 400;
     font-size: larger;
     width: 85%;
     margin: auto;
-    padding-top: 0.7em;
-    padding-bottom: 0.7em;
     color: #004446;
 }
 
+.audiovisual div{
+    background-color: #ffffff;
+    color: #004446;
+    margin: 1em 0 1em 0;
+}
+
 .videoyoutube{
+    background-color: #ffffff;
     width: 100%;
     height: 200px;
+    border-radius: 1%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1em;        
 }
+
+.audiovisual div h4{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding: 1em;
+}
+
+.integrantes{
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    padding-left: 4em;
+    padding-bottom: 2em;
+}
+.integrantes li{
+    border-left: 0.3em solid #004446;
+    padding-left: 0.5em;
+}
+
+.botonsalvar{
+    font-family: 'Quicksand', sans-serif;
+    font-size: small;
+    text-align: center;
+    border-top: 0.3em solid #FDDA02;
+    margin-top: 2em;
+    padding-bottom: 3em;
+}
+.botonsalvar p{
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    font-size: larger;
+    width: 85%;
+    margin: auto;
+    color: #004446;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+}
+.botonsalvar a{
+    background-color: #004446;
+    color: #ECF6F0;
+    padding: 1em;
+    border-radius: 2em;
+}
+.botonsalvar a:hover{
+    background-color: #FDDA02;
+    color: #004446;
+}
+
+#solo{
+    text-align: center;
+}
+#solo h4{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    background-color: #ffffff;
+    margin-top: 2.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#contacto{
+    background-color: #6DB98D;
+    padding: 2em 2em 0 2em;
+}
+#contacto h4{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #004446;
+    padding: 2em;
+}
+
+footer{
+    background-color: #ECF6F0;
+    padding: 2em;
+    color: #004446;
+}
+
+footer div{
+    font-family: 'Quicksand', sans-serif;
+    font-size: x-large;
+    margin-bottom: 0.5em;
+}
+
+#menufooter{
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+}
+#menufooter li{
+    margin-bottom: 0.3em;
+}
+
+
+#listacontacto li{
+    padding-left: 1em;
+    margin-bottom: 0.5em;
+}
+
+#listacontacto li a{
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    font-size: large;
+    color: #004446;
+}
+
+
 
 /*-------------------------------------------------------
 -------------------------------------------------
