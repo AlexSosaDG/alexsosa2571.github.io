@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Quicksand:wght@400;700&family=Sintony:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Sintony:wght@400;700&display=swap');
 
  *{
     margin: 0;
@@ -8,11 +8,12 @@
     box-sizing: border-box;
 }
 
-
-
 h1{
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 0.5em;
     color: #004446;
 }
 
@@ -22,8 +23,13 @@ h2{
     border-top: 0.15em solid #FDDA02;
     border-bottom: 0.15em solid #FDDA02;
     padding: 0.4em 0 0.4em 0;
+    width: 55%;
+    margin: 0 auto;
 }
 
+a{
+    text-decoration: none;
+}
 p{
     font-family: 'Quicksand', sans-serif;
 }
@@ -33,7 +39,7 @@ ul, ol{
 }
 
 header{
-    background-color: #ECF6F0;
+    background-color: rgba(236, 246, 240, 0.9);
     font-family: 'Quicksand', sans-serif;
     color: #004446;
 }
@@ -65,8 +71,8 @@ header{
    padding: 0.5em;
    width: 2.8em;
    height: 2.2em;
-   top: 1.9em;
-   right: 2em;
+   top: 1em;
+   right: 1em;
    cursor: pointer;
    transition: all 0.3s ease-out;
    position: fixed;
@@ -79,18 +85,18 @@ header{
     color: #004446;
     transition: all 0.3s ease-out;
     z-index: 9090;
-    top: 1.15em;
-    right: 1.38em;
+    top: 0.65em;
+    right: 0.8em;
     width: 1em;
     position: fixed;
 }
 
 .cruz{
-    color: #FDDA02;
+    color: #004446;
     transition: all 0.3s ease-out;
     z-index: 9090;
-    top: 1.15em;
-    right: 1.38em;
+    top: 0.7em;
+    right: 0.85em;
     width: 1em;
     position: fixed;
 }
@@ -98,10 +104,11 @@ header{
 .menu{
     text-align: center;
     background-color: #004446;
-    width: 93%;
-    top: 1.17em;
-    right: 1.38em;
-    border-radius: 2%;
+    opacity: 0.9;
+    width: 98%;
+    top: 0.4em;
+    right: 0.4em;
+    border-radius: 12px;
     position: fixed;
     color: #ECF6F0;
 }
@@ -109,8 +116,8 @@ header{
 .boton_prendido{
     font-weight: 700;
     color: #FDDA02;
-    border-bottom: 0.2em solid #FDDA02;
-    border-top: 0.2em solid #FDDA02;
+    border-bottom: 0.2em solid #ECF6F0;
+    border-top: 0.2em solid #ECF6F0;
     padding: 0.4em 0 0.4em 0em;
 }
 
@@ -136,8 +143,9 @@ header{
 }
 
 #principal p{
+    font-size: 1.7em;
     color: #004446;
-    margin-bottom: 2em;
+    padding-bottom: 0.5em;
 }
 
 .linea{
@@ -165,30 +173,228 @@ header{
 
 .fondoverde div{
     font-family: 'Sintony', sans-serif;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 2em;
+}
 
-    margin-bottom: 3em;
+.fondoverde h4{
+    font-size: 1.5em;
 }
 
 .listapuestoactual li{
     margin-left: 1em;
     margin-top: 0.8em;
     margin-bottom: 0.5em;
-    padding-left: 0.6em;
+    padding-left: 0.5em;
     border-left: 0.2em solid #FDDA02;
 }
 
-
+.fondoverde img{
+    text-align: center;
+    background-color: #ECF6F0;
+    padding: 1em;
+    border-radius: 20px;
+}
 
 /*-------------------------------------------------
-----------------Inicio version tablet 600px ------------------- 
+---------------- experiencia ------------------- 
+-------------------------------------------------*/
+
+.fondoclaro{
+    background-color: #ECF6F0;
+    padding: 2em;
+}
+
+.fondoclaro h2{
+    color: #004446;
+}
+.fondoclaro > h4{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #004446;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.datotrabajo{
+    background-color: #004446;
+    height: 13.5em;
+    padding: 1.5em 1.2em 1.5em 1em;
+    color: #ECF6F0;
+}
+
+.datotrabajo h6{
+    color: #FDDA02;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+
+.datotrabajo h4{
+    font-family: 'Sintony', sans-serif;
+    font-size: 1.8em;
+    padding-bottom: 0.4em;
+    padding-top: 0.1em;
+    color: #ECF6F0;
+}
+
+.iconotrabajo{
+    background-color: #ffffff;
+    height: 9em;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.logopropio{
+    width: 100px;
+    height: auto;
+    margin-right: 2em;
+}
+
+.logoinstagram{
+    width: 40px;
+    height: auto;
+    margin-right: 0.4em;
+}
+#instagramunico{
+    height: 100px;
+    width: auto;
+    padding-bottom: 0.5em;
+}
+.linktrabajo{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: #004446;
+    font-size: 2em;
+}
+
+.itemdostrabajo{
+    display: flex;
+    flex-direction: row;
+}
+
+.botontrabajo{
+    margin-top: 1em;
+}
+.botontrabajo a :hover{
+    background-color: #FDDA02;
+}
+
+/*-------------------------------------------------
+---------------- habilidades ------------------- 
+-------------------------------------------------*/
+
+.habilidades{
+    background-color: #004446;
+    padding: 2em;
+}
+
+.habilidades h5{
+    font-family: 'Sintony', sans-serif;
+    font-size: x-large;
+    color: #ECF6F0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.habilidades h4{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: x-large;
+    color: #ECF6F0;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.porcentajeline{
+    margin-bottom: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.habilidades h6{
+    font-family: 'Sintony', sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    color: #FDDA02;
+    flex-basis: 35%;
+}
+.lineaporcentaje{
+    border: 0.15em solid #ECF6F0;
+    flex-basis: 55%;
+}
+.contenedorporcentaje{
+    background-color: #FDDA02;
+    color: #FDDA02;
+}
+.porcentajeline p{
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    color: #ECF6F0;
+}
+
+/*-------------------------------------------------
+---------------- portafolios ------------------- 
+-------------------------------------------------*/
+
+.album{
+    text-align: center;
+}
+
+.galeria{
+    background-color: #ffffff;
+    width: 400px;
+    border-radius: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+.galeria img{
+    border-radius: 1% 1% 0 0;
+    width: 400px;
+    height: auto;
+}
+.galeria figcaption{
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    font-size: larger;
+    width: 85%;
+    margin: auto;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    color: #004446;
+}
+
+.videoyoutube{
+    width: 100%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-------------------------------------------------------
+-------------------------------------------------
+Inicio version tablet 600px 
+-------------------------------------------------------- 
 -------------------------------------------------*/
 @media screen and (min-width: 600px){
 
 }
 
-/*-------------------------------------------------
-----------------Inicio version laptop y desktops 992px ------------------- 
--------------------------------------------------*/
+/*--------------------------------------------------------
+----------------------------------------------------------
+Inicio version laptop y desktops 992px 
+------------------- ------------------------------------
+----------------------------------------------------------*/
 @media screen and (min-width: 992px){
 
     #principal{
@@ -208,9 +414,11 @@ header{
     
 }
 
-/*-------------------------------------------------
-----------------Inicio version desktop 1200px ------------------- 
--------------------------------------------------*/
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+Inicio version desktop 1200px 
+------------------------------------------------------------- 
+-------------------------------------------------------------*/
 @media screen and (min-width: 1200px) {
 
 
