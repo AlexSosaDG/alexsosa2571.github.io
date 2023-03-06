@@ -139,6 +139,8 @@ header{
 .fotoperfil img{
     width: 60%;
     height: auto;
+    outline: 2px solid #FDDA02;
+    outline-offset: -8px;
 }
 
 #principal p{
@@ -372,7 +374,7 @@ header{
 .galeria img{
     border-radius: 1% 1% 0 0;
     width: 100%;
-    height: auto;
+
 }
 .galeria figcaption, .audiovisual p{
     font-family: 'Sintony', sans-serif;
@@ -553,19 +555,11 @@ Inicio version tablet 600px
     }
 
     .album{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
+        columns: 3 ;
+        colum
     }
     .galeria{
-        width: 100%;
-        height: 100%;
-    }
-    .galeria figcaption{
-        width: 100%;
-    }
-    .galeria figcaption{
-        padding: 1em;
+        margin-bottom: ;
     }
 
     .videoyoutube{
