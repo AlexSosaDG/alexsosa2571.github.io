@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <script src="js/function.js"></script>
+
     <header>
         <div id="nombre">
             <h4>Alex Sosa</h4>
@@ -25,11 +25,11 @@
                 <i class=" material-icons cruz novisible">close</i>
             </button>
             <ul class="menu novisible">
-                <li class="boton_prendido">INICIO</li>
-                <li>EXPERIENCIA</li>
-                <li>HABILIDADES</li>
-                <li>PORTAFOLIO</li>
-                <li>CONTACTO</li>
+                <li class="boton_prendido a"><a href="#principal">INICIO</a></li>
+                <li class="b"><a href="#experienciaBtn">EXPERIENCIA</a></li>
+                <li class="c"><a href="#habilidadesBtn">HABILIDADES</a></li>
+                <li class="d"><a href="#portafoliosBtn">PORTAFOLIO</a></li>
+                <li class="e"><a href="#listacontacto">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -76,7 +76,7 @@
                 </div>
             </div>
         </section>
-        <section class="fondoclaro">
+        <section class="fondoclaro" id="experienciaBtn">
             <h2>EXPERIENCIA</h2>
             <h4>La experiencia es fundamental para superarse</h4>
             <div>
@@ -162,7 +162,7 @@
                 </article>
             </div>
         </section>
-        <section class="habilidades">
+        <section class="habilidades" id="habilidadesBtn">
             <h2>EDUCACIÓN</h2>
             <h4>En constante aprendisaje</h4>
             <h5>Formación</h5>
@@ -202,6 +202,9 @@
                     </div>
                     <p>40%</p>
                 </li>
+            </ul>
+            <h5>Manejo de programas</h5>
+            <ul>
                 <li class="porcentajeline">
                     <h6>HTML</h6> <!-- barra de porcentaje-->
                     <div class="lineaporcentaje">
@@ -223,9 +226,6 @@
                     </div>
                     <p>40%</p>
                 </li>
-            </ul>
-            <h5>Manejo de programas</h5>
-            <ul>
                 <li class="porcentajeline">
                     <h6>Photoshop</h6> <!-- barra de porcentaje-->
                     <div class="lineaporcentaje">
@@ -277,7 +277,7 @@
                 </li>
             </ul>
         </section>
-        <section class="fondoclaro">
+        <section class="fondoclaro" id="portafoliosBtn">
             <h2>PORTAFOLIO</h2>
             <h4>Una imagen vale más que mil palabras</h4>
             <article class="album">
@@ -306,8 +306,10 @@
                     <figcaption>Folleto de depilación</figcaption>
                 </figure>
                 <figure class="galeria">
+                    <div>
                     <img src="imagenes/flyer_3.png" alt="Flyer bellesa facial">
-                    <figcaption>Diseño de cartel impreso en lona de bellesa facial</figcaption>
+                    <figcaption>Cartel de belleza facial</figcaption>
+                </div>
                 </figure>
                 <figure class="galeria">
                     <img src="imagenes/tarjeta_1.png" alt="Tarjeta personal andamios">
@@ -726,6 +728,7 @@
             </li>
         </ul>
     </footer>
+    <script src="js/function.js"></script>
 </body>
 
 </html>
