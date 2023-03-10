@@ -112,7 +112,7 @@ header{
     color: #ECF6F0;
 }
 
-.boton_prendido{
+.boton_prendido a{
     font-weight: 700;
     color: #FDDA02;
     border-bottom: 0.2em solid #ECF6F0;
@@ -376,7 +376,18 @@ header{
     width: 100%;
 
 }
-.galeria figcaption, .audiovisual p{
+.galeria figcaption{
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    font-size: larger;
+    text-align: center;
+    width: 85%;
+    padding: auto;
+    margin:auto;
+    color: #004446;
+}
+
+.audiovisual p{
     font-family: 'Sintony', sans-serif;
     font-weight: 400;
     font-size: larger;
@@ -386,7 +397,6 @@ header{
     margin: auto;
     color: #004446;
 }
-
 .audiovisual div{
     background-color: #ffffff;
     color: #004446;
@@ -452,6 +462,7 @@ header{
 
 #solo{
     text-align: center;
+    padding-bottom: 2em;
 }
 #solo h4{
     font-family: 'Quicksand', sans-serif;
@@ -494,6 +505,12 @@ footer div{
 #menufooter li{
     margin-bottom: 0.3em;
 }
+#menufooter li a{
+    color: #004446;
+}
+#menufooter li a:hover{
+    color: #6DB98D;
+}
 
 
 #listacontacto li{
@@ -507,7 +524,9 @@ footer div{
     font-size: large;
     color: #004446;
 }
-
+#listacontacto li a:hover{
+    color: #6DB98D;
+}
 
 
 /*-------------------------------------------------------
@@ -555,16 +574,13 @@ Inicio version tablet 600px
     }
 
     .album{
-        columns: 2 250px;
-        column-span: none;
-    }
+        columns: 2 ;
 
-    .galeria div{
-        column-span: none;
     }
-    .galeria >img{
-        padding-bottom: 0;
-    }  
+    
+    .galeria{
+        margin-bottom: 1.5em;
+    }
 
     .videoyoutube{
         display: block;
@@ -578,8 +594,17 @@ Inicio version tablet 600px
 
     #flexinstagram{
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
-        justify-content: space-between;
+    }
+    #flexinstagram li{
+        padding-right: 2em;
+        padding-bottom: 2em;
+    }
+
+    footer :not(div){
+        display: flex;
+        justify-content: space-around;
     }
 
 }
@@ -591,19 +616,80 @@ Inicio version laptop y desktops 992px
 ----------------------------------------------------------*/
 @media screen and (min-width: 992px){
 
+    #llamarmenu{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        background-color: #ECF6F0;
+        box-shadow: 0 5px #00444646;
+    }
+    .menu{ 
+        position: static;
+        display: flex;
+        background-color: transparent;
+        justify-content: end;
+        font-size: small;
+    }
+    .menu li{
+        margin-block-start: auto;
+        margin-block-end: auto;
+        margin-inline-start: auto;
+        margin-inline-end: 1.8em;
+        padding-inline-start: auto;
+    }
+    .menu li a{
+        color: #004446;
+    }
+
+    .boton_prendido a{
+        color: #004446;
+        font-weight: 700;
+        border-left: 0.2em solid #004446;
+        border-bottom: none;
+        border-top: none;
+        padding-left: 0.4em;
+        width: 5%;
+    }
+
     #principal{
         display: flex;
     }
-    .menu{
-        display: flex;
+
+    .fotoperfil img{
+        width: 100%;
+    }
+    #flexdesktop{
+        width: 58%;
+       align-self: center;
+    }
+
+    .fotoperfil{
+        order: 1;
+    }
+    h1{
+        text-align: left;
+        padding-left: 1em;
+    }
+    #flexdesktop p{
+        width: 95%;
+        padding-left: 1em;
+    }
+
+    .album{
+        columns: 4;
     }
     
-    .menu li{
-        margin-left: 2.5em;
+    .videoyoutube{
+        width: 600px;
+        height: 420px;
     }
-    
-    .boton_prendido{
-        padding-left: 0.5em;
+    .audiovisual p{
+        width: 60%;
+    }
+    .integrantes{
+        margin-left: 20%;
     }
     
 }
